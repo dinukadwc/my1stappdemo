@@ -1,8 +1,11 @@
 import React from 'react'
+import './RoundedBtn.css';
 
-function RoundedButton() {
+function RoundedButton(props) {
   return (
-    <button>Click to continue</button>
+      <div>
+        <button className='btn-round'>{props.text}</button>
+      </div>
   );
 }
 
